@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+@media screen and (min-width: 601px) and (max-width: 900px){
+    
+    body header{
+        height: 60vh;
+    }
+    .info .name{
+        font-size: 55px;
+    }
+    .info .description{
+        font-size: 40px;
+    }
+    .main .about-content .profile-picture {
+        margin: 0 auto;
+        display: block;
+        margin-top: 20px;
+    }
+    .main .about_me{
+        display: flex;
+        flex-direction: column;
+    }
+    .main .about-content{
+        grid-template-areas: 
+            "sectiontitle"
+            "image"
+            "text";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        padding:0;
+        padding-top: 50px;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .contact-content{
+        padding: 0;
+        padding-bottom: 40px;
+    }
+}
+@media screen and (max-width: 600px) {
+    body header{
+        height: 45vh;
+    }
+    .info .name{
+        font-size: 40px;
+    }
+    .info .description{
+        font-size: 25px;
+    }
+    .main .about-content .profile-picture {
+        display: block;
+        transform: scale(0.7);
+        margin: 0 auto;
+        align-self: center;
+        padding: 0;
+        margin: 0;
+    }
+    .main .about_me{
+        display: flex;
+        flex-direction: column;
+    }
+    .main .about-content{
+        grid-template-areas: 
+            "sectiontitle"
+            "image"
+            "text";
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        padding: 0;
+        padding-top: 50px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .main .about-content .about_text{
+        padding: 10px;
+    }
+    .contact-content{
+        padding: 10px;
+        padding-bottom: 70px;
+    }
+}
+
+header {
+    background-image: url("images/bryanqueseneberry_oregoncoast.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: main;
+    height: 80vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.main{
+    background-color: #abb6bb;
+}
+/*
+.navbar{
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 0; 
+    padding-top: 10px;
+}
+.navbar-links{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+.navbar-links button{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    display: block;
+    padding: .7rem;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+.navbar-links button:hover{
+    color: #5e5e5e;
+}
+*/
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0;
+}
+.name{
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 80px;
+    font-weight: bolder;
+}
+.description {
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 50px;
+}
+.section_title{
+    color: #2d4f5d;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    grid-area: sectiontitle;
+}
+.about-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    padding-bottom: 20px;
+}
+.about_me{
+    padding-top: 0;
+    display: grid;
+    grid-template-areas: 
+    "sectiontitle sectiontitle"
+    "profilepic aboutmetext";
+    grid-gap: 2rem;
+}
+.about_me .section_title{
+    padding-top: 0;
+}
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.profile-picture {
+    width: 503px;
+    height: 332px;
+    border:10px solid #2d4f5d;
+    grid-area: profilepic;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+}
+.row{
+    display: flex;
+    padding: 5px;
+}
+.contact-text{
+    padding-left: 20px;
+    align-self: center;
+}
+.contact-content{
+    padding-bottom: 80px;
+}
+
+
